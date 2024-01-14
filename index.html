@@ -542,8 +542,8 @@
                             </ul>
                         </address>
                         <div class="working-time">
-                            <p class="contacts-text">Working hours</p>
-                            <p class="contacts-schedule">Every day from 9:00 to 19:00</p>
+                            <p class="contacts-text">Час роботи</p>
+                            <p class="contacts-schedule">по запису з 9:00 до 19:00</p>
                         </div>
                     </div>
                 </section>
@@ -568,17 +568,26 @@
                 </svg>
             </button>
             <h2 class="title-modal">залиште контактні дані для зв"язку</h2>
-            <form>
-                <label class="form-label" for="user-name">Name</label>
+            <form id="tg">
+                <label class="form-label" for="user-name">ім'я</label>
                 <div class="form-wrap">
-                    <input class="form-input" type="text" name="name" id="user-name">
+                    <input class="form-input" type="text" name="name" id="user-name" 
+                    required
+                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                    minlength="2"
+                    placeholder="введіть ім'я (не менше двох літер)"
+                    title="Наталя">
                     <svg class="icon-form" width="13" height="13">
                         <use href="./image/icons.svg#icon-human"></use>
                     </svg>
                 </div>
-                <label class="form-label" for="user-tel">Phone</label>
+                <label class="form-label" for="user-tel">Телефон</label>
                 <div class="form-wrap">              
-                    <input class="form-input" type="tel" name="tel" id="user-tel">
+                    <input class="form-input" type="tel" name="phone" id="user-tel"
+                    required
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                title="011-111-11-11"
+                placeholder="введіть номер в форматі 0хх ххх хх хх">
                     <svg class="icon-form" width="13" height="13">
                         <use href="./image/icons.svg#icon-phone"></use>
                     </svg>
@@ -590,8 +599,8 @@
                         <use href="./image/icons.svg#icon-email"></use>
                     </svg>
                 </div>
-                <label class="form-label" for="comment">Comment</label>
-                <textarea class="form-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
+                <label class="form-label" for="messages">Повідомлення</label>
+                <textarea class="form-textarea" name="messages" type="messages" id="comment" placeholder="Введіть текст"></textarea>
                 <input class="form-checkbox visually-hidden" type="checkbox" value="true" id="policy" name="policy" required>
                 <label class="form-accept" for="policy">
                     <span>I accept the terms and conditions of the
@@ -604,5 +613,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/tgbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
