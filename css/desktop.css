@@ -1,0 +1,224 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+   /* ------ Header ------ */
+
+  .header .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .header-logo {
+    margin-right: 131px;
+  }
+  .header-list {
+    gap: 30px;
+  }
+  .header-contacts {
+    right: 2px;
+    flex-direction: row;
+    align-items: center;
+    gap: 43px;
+  }
+
+  /* ------ Hero ------ */
+
+  .hero {
+    padding: 0;
+  }
+  .hero .container {
+    max-width: 1200px;
+  }
+  .hero-container-bg {
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: 0;
+
+    padding-bottom: 208px;
+
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)),
+      url("../image/hero-bg-desktop.jpg");
+    flex-grow: 1;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero-container-bg {
+        background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../image/hero-bg-desktop-2x.jpg");
+      }
+  }
+  .hero-title {
+    font-size: 72px;
+  }
+  .hero-subtitle {
+    max-width: 360px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .hero-list {
+    transform: rotate(-90deg) translateY(130%);
+  }
+
+  /* ------ About us ------ */
+
+  .about-list {
+    flex-direction: row;
+  }
+  .about-container {
+    max-width: 470px;
+  }
+  .about-title {
+    max-width: 470px;
+  
+    font-size: 42px;
+    line-height: 1.16;
+  }
+
+  /* ------ Services and prices ------ */
+
+  .services {
+    background-image: url(../image/services-bg-desktop.png);
+    background-color: #111319;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .services{
+        background-image: url(../image/services-bg-desktop-2x.png);
+    }
+  }
+  .services .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+  }
+  .services-mob-list {
+    display: none;
+  }
+  .services-list {
+    display: block;
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+  }
+  .services-list:first-child {
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+  .services-list:last-child {
+    background-image: linear-gradient(
+      180deg,
+      #090b13 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
+  .services-text {
+    max-width: 243px;
+
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  /* ------ Benefits ------ */
+
+  .benefits .container {
+    flex-direction: row;
+  }
+  .benefits-container {
+    margin-left: 130px;
+    margin-bottom: 0;
+  }
+  .benefits-list {
+    max-width: 370px;
+    margin-left: 69px;
+  }
+  .benefits-item {
+    padding: 20px 24px;
+  }
+
+  /* ------ Barbers ------ */
+
+  .barbers-container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .barbers-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /* ------ Portfolio ------ */
+
+  .portfolio-suptitle {
+    margin-bottom: 44px;
+  }
+  .portfolio-item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  /*------ Subscribe ------ */
+
+  .contact-wrap {
+    background-image: url("../image/contacts-bg-desktop.png");
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .contact-wrap {
+        background-image: url("../image/contacts-bg-desktop-2x.png");
+    }
+  }
+  .contact-wrap .container {
+    display: flex;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .subscription {
+    width: calc(50% + 15px);
+
+    padding-right: 30px;
+    padding-bottom: 130px;
+    padding-left: 0;
+  }
+
+    /*------ Contacts ------ */
+
+  .contacts {
+    width: calc(50% - 15px);
+
+    padding-left: 100px;
+    padding-top: 130px;
+  }
+  .contacts-list {
+    margin-bottom: 70px;
+  }
+  .info-container {
+    flex-direction: column;
+  }
+}
