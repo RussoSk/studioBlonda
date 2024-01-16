@@ -31,15 +31,15 @@
                     </svg>
                 </a>
                 <ul class="header-list list">
-                    <li class="header-item"><a href="#about" class="header-link link">About</a></li>
-                    <li class="header-item"><a href="#services-prices" class="header-link link">Services and prices</a></li>
-                    <li class="header-item"><a href="#barbers" class="header-link link">Barbers</a></li>
-                    <li class="header-item"><a href="#contacts" class="header-link link">Contacts</a></li>
+                    <li class="header-item"><a href="#about" class="header-link link">Про нас</a></li>
+                    <li class="header-item"><a href="#services-prices" class="header-link link">Послуги та ціни</a></li>
+                    <li class="header-item"><a href="#master" class="header-link link">Майстер</a></li>
+                    <li class="header-item"><a href="#contacts" class="header-link link">Контакти</a></li>
                 </ul>
             </nav>
             <div class="header-contacts">
                 <a href="tel:+380974814585" class="header-tel link">+38 097 481 45 85</a>
-                <button type="button" class="header-btn btn" data-modal-open>Online-запис</button>
+                <button type="button" class="header-btn btn js-open-modal" data-modal=2 >Online-запис</button>
             </div>
             <button class="mob-menu-btn" type="button" data-menu-open>
                 <svg width="40" height="40">
@@ -59,13 +59,13 @@
                         <ul class="mob-menu-list list">
                             <li class="mob-menu-item"><a href="#about" class="mob-menu-link link">About</a></li>
                             <li class="mob-menu-item"><a href="#services-prices" class="mob-menu-link link">Services and prices</a></li>
-                            <li class="mob-menu-item"><a href="#barbers" class="mob-menu-link link">Barbers</a></li>
+                            <li class="mob-menu-item"><a href="#master" class="mob-menu-link link">Barbers</a></li>
                             <li class="mob-menu-item"><a href="#contacts" class="mob-menu-link link">Contacts</a></li>
                         </ul>
                     </nav>
                     <div class="mob-menu-contacts">
                         <a href="tel:+380974814585" class="mob-menu-tel link">+38 097 481 45 85</a>
-                        <button type="button" class="mob-btn btn" data-modal-open>Online-запис</button>
+                        <button type="button" class="mob-btn btn js-open-modal" data-modal=2>Online-запис</button>
                     </div>
                     <ul class="menu-soc-list list">
                         <li class="menu-soc-item"><a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="hero-container-bg">
                     <p class="hero-suptitle suptitle">A beauty studio for women in Kremenchug</p>
-                    <h1 class="hero-title title">студія краси BLONDA</h1>
+                    <h1 class="hero-title title">студія краси <span class="name-studio">BLONDA</span></h1>
                     <p class="hero-subtitle subtitle ">We are experts in trendy men’s haircuts.
                         We work quickly, carefully and with style.</p>
                 </div>
@@ -245,7 +245,7 @@
             </div>
         </section>
         <!-- Our barbers -->
-        <section class="barbers section" id="barbers">
+        <section class="barbers section" id="master">
             <div class="container">
                 <div class="barbers-container">
                     <p class="barbers-suptitle suptitle">For true enjoyers of the atmosphere</p>
@@ -560,9 +560,9 @@
         </div>
     </footer>
     <!-- Modal Window -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="btn-close" data-modal-close>
+   
+        <div class="modal" data-modal="2">
+            <button type="button" class="btn-close js-modal-close" >
                 <svg class="icon-close" width="24" height="24">
                     <use href="./image/icons.svg#icon-close"></use>
                 </svg>
@@ -609,9 +609,10 @@
                 </label>
                 <button type="submit" class="form-btn btn">відправити</button>
             </form>
-        </div>
+            <div class="overlay js-overlay-modal"></div>
+        
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modalwindows.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/tgbot.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

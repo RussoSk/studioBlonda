@@ -64,6 +64,12 @@
   }
   .hero-title {
     font-size: 72px;
+    color: #f57b24;
+  }
+  .name-studio {
+    font-weight: 700;
+    font-size: 85px;
+    color: aliceblue;
   }
   .hero-subtitle {
     max-width: 360px;
