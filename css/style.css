@@ -35,6 +35,12 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
 .container {
   box-sizing: border-box;
   margin-right: auto;
@@ -284,7 +290,7 @@ img {
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url("../image/hero-bg-mobile.jpg");
+    url("../image/hero-bg-mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -297,9 +303,10 @@ img {
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url("../image/hero-bg-mobile-2x.jpg");
+      url("../image/hero-bg-mobile.webp");
   }
 }
+
 .hero-suptitle {
   color: rgba(157, 164, 189, 0.6);
 }
@@ -943,3 +950,105 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* ======================== SLAIDER======================== */
+
+.page-slaid {
+  
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border: 2px solid rgba(233, 204, 241, 0.836);
+}
+.container-sl {
+  max-width: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+.reviews-slaider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.item-projekts {
+  width: 100%;
+}
+.reviews-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.btn-sl {
+  display: flex;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(226, 183, 235, 0.5);
+}
+.slid-btn-icon {
+  fill: #5e3b96;
+}
+
+/* ==================================== PORTFOLIO ================================== */
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.list-navigation {
+  display: flex;
+  row-gap: 16px;
+  column-gap: 24px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.sup-title-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.card-portfolio {
+  transition: box-shadow var(--transform-time-cubic);
+}
+.card-portfolio:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.button-portfolio {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color var(--transform-time-cubic),
+    background-color var(--transform-time-cubic),
+    box-shadow var(--transform-time-cubic);
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.list-projekt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48px;
+}
+.item-projekt {
+  max-width: 396px;
+}
+
+.card-content {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+/* =========================== /SLAIDER =========================== */

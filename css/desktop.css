@@ -48,7 +48,7 @@
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)),
-      url("../image/hero-bg-desktop.jpg");
+      url("../image/hero-bg-desktop.webp");
     flex-grow: 1;
   }
   @media (min-device-pixel-ratio: 2),
@@ -59,7 +59,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url("../image/hero-bg-desktop-2x.jpg");
+        url("../image/hero-bg-desktop-2x.webp");
       }
   }
   .hero-title {

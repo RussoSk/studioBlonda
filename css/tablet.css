@@ -87,9 +87,9 @@
     padding: 272px 0 237px 98px;
 
     background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)),
-      url("../image/hero-bg-tablet.jpg");
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)),
+      url("../image/hero-bg-tablet.webp");
     flex-grow: 1;
   }
   @media (min-device-pixel-ratio: 2),
@@ -98,10 +98,15 @@
       .hero-container-bg {
         background-image: linear-gradient(
           rgba(25, 28, 38, 0.2),
-          rgba(25, 28, 38, 0.2)
-        ),
-        url("../image/hero-bg-tablet-2x.jpg");
+          rgba(25, 28, 38, 0.2)),
+        url("../image/hero-bg-tablet.webp");
       }
+  }
+  .hero-title {
+    color: #f57b24;
+  }
+  .name-studio {
+    color: aliceblue;
   }
   .hero-soc {
     box-sizing: border-box;

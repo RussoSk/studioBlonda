@@ -13,12 +13,25 @@
   .hero-title {
     font-size: 48px;
   }
+  .hero-suptitle {
+    color: aliceblue;
+  }
   .hero-subtitle {
     font-size: 16px;
+    color: aliceblue;
   }
-
+  .hero-title {
+    color: #f57b24;
+    /* border: 1px solid #c99476; */
+  }
+  .name-studio {
+    color: aliceblue;
+  }
   /* ------ About us ------ */
 
+  .about-list {
+   
+  }
   .about-title {
     max-width: 306px;
   
