@@ -8,7 +8,8 @@
 
   /* ------ Hero ------ */
   .hero-container-bg {
-    padding-left: 31px
+    padding-left: 31px;
+    
   }
   .hero-title {
     font-size: 48px;
