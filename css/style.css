@@ -504,6 +504,10 @@ img {
   align-items: center;
   text-align: center;
 }
+.barbers-item {
+  border: solid 1px #202020;
+  border-radius: 5px;
+}
 .barbers-info {
   padding-top: 30px;
 }
@@ -525,6 +529,7 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
   gap: 10px;
 }
 .social-link {
@@ -954,10 +959,10 @@ img {
 /* ======================== SLAIDER======================== */
 
 .page-slaid {
-  
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border: 2px solid rgba(233, 204, 241, 0.836);
+  min-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid rgba(15, 15, 15, 0.836);
 }
 .container-sl {
   max-width: 400px;
@@ -983,7 +988,7 @@ img {
   padding: 5px 20px;
   border-radius: 50px;
   border: none;
-  background-color: rgba(226, 183, 235, 0.5);
+  background-color: rgba(30, 30, 31, 0.5);
 }
 .slid-btn-icon {
   fill: #5e3b96;

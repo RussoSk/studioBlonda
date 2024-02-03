@@ -59,7 +59,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url("../image/hero-bg-desktop-2x.webp");
+        url("../image/hero-bg-desktop.webp");
       }
   }
   .hero-title {
@@ -106,7 +106,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .services{
-        background-image: url(../image/services-bg-desktop-2x.png);
+        background-image: url(../image/services-bg-desktop.png);
     }
   }
   .services .container {
@@ -163,17 +163,21 @@
   }
   .benefits-item {
     padding: 20px 24px;
+    
   }
 
   /* ------ Barbers ------ */
 
   .barbers-container {
     max-width: 100%;
+    text-align: center;
     margin: 0;
   }
   .barbers-list {
     flex-direction: row;
-    gap: 30px;
+    justify-content: center;
+    gap: 50px;
+    
   }
 
   /* ------ Portfolio ------ */
