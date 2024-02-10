@@ -962,7 +962,7 @@ img {
   min-height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid rgba(15, 15, 15, 0.836);
+  /* border: solid 1px #202020; */
 }
 .container-sl {
   max-width: 400px;
@@ -985,13 +985,13 @@ img {
 }
 .btn-sl {
   display: flex;
-  padding: 5px 20px;
+  padding: 10px 10px;
   border-radius: 50px;
   border: none;
-  background-color: rgba(30, 30, 31, 0.5);
+  /* background-color: rgba(30, 30, 31, 0.5); */
 }
 .slid-btn-icon {
-  fill: #5e3b96;
+  fill: #0f0f0f;
 }
 
 /* ==================================== PORTFOLIO ================================== */
